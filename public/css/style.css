@@ -1,0 +1,39 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.shop-style {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.shop-style ul li {
+  list-style:none;   
+}
+
+.shop-title {
+  font: 30px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-style: bold;
+  color: inherit;
+  padding-bottom: 6px;
+}
+
+.p-intro {
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-style: italic;
+}
+
+.p-addinfo {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #009922;
+}
+
+.glyphicon {
+  margin:inherit 2px;    
+}
+
+

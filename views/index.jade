@@ -1,0 +1,50 @@
+extends layout
+
+block content
+   #myCarousel.carousel.slide(data-ride='carousel')
+    //
+         Indicators 
+      ol.carousel-indicators
+        li.active(data-target='#myCarousel', data-slide-to='0')
+        li(data-target='#myCarousel', data-slide-to='1')
+        li(data-target='#myCarousel', data-slide-to='2')
+      .carousel-inner
+        .item.active
+          img(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='First slide')
+          .container
+            .carousel-caption
+              h2 Velkommen til Maxi Catering!
+              p
+                | Vi tilbyr matglede og variasjon!
+                | 
+              p
+               //a.btn.btn-lg.btn-primary(href='/footermenu/kontakt', role='button') Ring og bestill nå!
+        .item
+          img(src='data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Second slide')
+          .container
+            .carousel-caption
+              h1 Vi har mange spennende retter!
+              p
+                | La oss levere kvalitetsmat til ditt event!
+              p
+                a.btn.btn-lg.btn-primary(href='/hovedretter/selskapsmat', role='button') Vårt utvalg
+        .item
+          img(src='data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Third slide')
+          .container
+            .carousel-caption
+              h1 Hva med en god dessert?
+              p
+                | Velg mellom mange lekre desserter!
+              p
+                a.btn.btn-lg.btn-primary(href='/desserter/#', role='button') Vårt utvalg
+      a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left
+      a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right
+    //
+       /.carousel 
+   
+   
+   
+   
+   
