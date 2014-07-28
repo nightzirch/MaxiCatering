@@ -10,6 +10,8 @@ var hovedretter = require('./routes/hovedretter');
 var smaretter = require('./routes/smaretter');
 var desserter = require('./routes/desserter');
 var footermenu = require('./routes/footermenu');
+var omoss = require('./routes/omoss');
+var gorine = require('./routes/gorine');
 
 
 var app = express();
@@ -30,6 +32,8 @@ app.use('/hovedretter', hovedretter);
 app.use('/smaretter', smaretter);
 app.use('/desserter', desserter);
 app.use('/footermenu', footermenu);
+app.use('/omoss', omoss);
+app.use('/gorine', gorine);
 
 
 

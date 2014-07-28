@@ -1,6 +1,7 @@
 $(document).ready(function(){
    // Lets find the active menu element
     var mainMenu = $("#main-menu li");
+    var mainMenuDropdown = $("#main-menu li.dropdown");
     var path = window.location.pathname.split("/");
     var loop = true;
     
@@ -21,4 +22,9 @@ $(document).ready(function(){
             }
         }
     }
+    $(mainMenuDropdown).hover(function() {
+        $(this).addClass("open");
+    }, function(){
+        $(this).removeClass("open");
+    });
 });

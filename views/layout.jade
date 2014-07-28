@@ -6,6 +6,7 @@ html
         link(rel='stylesheet', href='/css/bootstrap.min.css')
         link(rel='stylesheet', href='/css/carousel.css')
         link(rel='stylesheet', href='/css/flat-ui.css')
+        link(rel='stylesheet', href='/css/demo.css')
         link(rel='stylesheet', href='/css/style.css')
     
     body
@@ -64,7 +65,12 @@ html
                                             a(href="/desserter/vare-spesialiteter") Våre spesialiteter
                                 
                                 li
-                                    a(href="/desserter/kaker") 
+                                    a(href="/om-oss") Om oss
+                                li
+                                    a(href="/gorine") Gorine
+                                li
+                                    a(href="/referanser") Referanser
+                                    
                                        
         footer
             .navbar-wrapper
@@ -87,14 +93,12 @@ html
                                 
                                 p(align='center')
                                     a(href='footermenu/om-oss') © 2014 Maxi Catering · 
-                                    a(href='/footermenu/kontakt') 
-                                        span.glyphicon.glyphicon-home 
-                                        span Kontakt  
+                                    a(href='/footermenu/kontakt') Kontakt  
                                     | · 
-                                    a(href='#') Back to top
+                                    a(href='#') Til toppen
                      
         block content
         //Load scripts at the end for faster loading
         script(src="/js/jquery-2.0.3.min.js")
-        script(src="/js/bootstrap.min.js")
+        script(src="/js/bootstrap.js")
         script(src="/js/script.js")
