@@ -2,80 +2,84 @@ extends layout
 
 block content
   h1= title
-    //lage brødtekst tag?
     p Maxi Catering har ett stort utvalg av enklere middags- og lunchretter som passer godt til både små og store anledninger. Vårt utvalg av ferdigsmurte baguetter kan også anbefales til lunch eller frokost. Se vår rikholdige meny og la deg friste.
 
-
-    //Her begynner menyen
-    h5 Våre favoritter
-    //sett inn linje?
-    h5 Kjøttkaker - kr 99,-
-    h6 Våre kjøttkaker serveres med brun saus, ertestuing, grønnsaker og grøntsalat.
-        br
-        br
+    .row.demo-tiles
+        .col-xs-3
+          .tile
+            img.tile-image.bigillustration(src='images/example-image.jpg', alt="Kjøttkaker")
+            h3.tile-title(Web Oriented)
+            p Kjøttkaker
+            p Innkluderer: Våre kjøttkaker serveres med brun saus, ertestuing, grønnsaker og grøntsalat.
+            a.btn.btn-primary.btn-large.btn-block(href="#") Kun kr 99,-!
+          
+    
+        .col-xs-3
+          .tile.tile-hot
+            img.tile-image.bigillustration(src="images/kringle.jpg", alt="Lapskaus")
+            .h3.tile-title(Web Oriented)
+            p Lapskaus
+            p Vår populære lapskaus leveres med flatbrød og smør.
+            a.btn.btn-primary.btn-large.btn-block(href="#") Kun kr 79,-!
+    
+    
+        .col-xs-3
+          .tile
+            img.tile-image.bigillustration(src="images/napoleon.jpg", alt="Sweet`n sour gryte")
+            .h3.tile-title(Web Oriented)
+            p Sweet`n sour gryte
+            p Vår Stroganoff-/Kylling-/Sweet`n sour gryte levers med ris, baguetter og grøntsalat.
+            a.btn.btn-primary.btn-large.btn-block(href="#") Kun kr 119,-!
+   
+   
+   ul Leveres med baguetter og grønsalat
+        li Pølsegryte, kr 99,-
+        li Lasagne, kr 119,-
+        
+        .col-xs-3
+          .tile
+            img.tile-image.bigillustration(src="images/napoleon.jpg", alt="Oksesteik")
+            .h3.tile-title(Web Oriented)
+            p Oksesteik
+            p Leveres med grønnsaker, kokte poteter, saus og tyttebær.
+            a.btn.btn-primary.btn-large.btn-block(href="#") Kun kr 179,-!
+   
+        .col-xs-3
+          .tile
+            img.tile-image.bigillustration(src="images/napoleon.jpg", alt="Svinesteik")
+            .h3.tile-title(Web Oriented)
+            p Svinesteik
+            p Leveres med grønnsaker, kokte poteter, saus og tyttebær.
+            a.btn.btn-primary.btn-large.btn-block(href="#") Kun kr 169,-!
+   
+        .col-xs-3
+          .tile
+            img.tile-image.bigillustration(src="images/napoleon.jpg", alt="Reinsdyrsteik")
+            .h3.tile-title(Web Oriented)
+            p Reinsdyrsteik
+            p Leveres med grønnsaker, kokte poteter, saus og tyttebær.
+            a.btn.btn-primary.btn-large.btn-block(href="#") Kun kr 250,-!   
       
-    h5 Lapskaus - kr 79,-
-    h6 Vår populære lapskaus leveres med flatbrød og smør.
-        br
-        br
-        
-    h5 Sweet`n sour gryte - kr 119,-
-    h6 Vår Stroganoff-/Kylling-/Sweet`n sour gryte levers med ris, baguetter og grøntsalat.
-        br
-        br
-        
-    h5 Pølsegryte - kr 99,-
-    h6 Leveres med baguetter og grøntsalat
-        br
-        br
+        .col-xs-3
+          .tile
+            img.tile-image.bigillustration(src="images/napoleon.jpg", alt="Lammesteik")
+            .h3.tile-title(Web Oriented)
+            p Lammesteik
+            p Leveres med grønnsaker, kokte poteter, saus og tyttebær.
+            a.btn.btn-primary.btn-large.btn-block(href="#") Kun kr 260,-!
+            
+            
 
-    h5 Lasagne - kr 119,-
-    h6 Leveres med baguetter og grøntsalat
-        br
-        br
-        
-    h5 Oksesteik - kr 179,-
-    h6 Leveres med grønnsaker, kokte poteter, saus og tyttebær.
-        br
-        br
-        
-    h5 Svinesteik - kr 169,-
-    h6 Leveres med grønnsaker, kokte poteter, saus og tyttebær.
-        br
-        br
-        
-    h5 Reinsdyrsteik - kr 250,-
-    h6 Leveres med grønnsaker, kokte poteter, saus og tyttebær.
-        br
-        br
+   ul Rimelige retter til kun 99,- kr!
+        li Kyllinglår, leveres med ris, baguetter og grøntsalat.
+        li Carbonara, leveres med salat og baguetter.
+        li Karbonader, leveres med potetsalat, grøntsalat og baguetter.
 
-    h5 Lammesteik - kr 240,-
-    h6 Leveres med grønnsaker, kokte poteter, saus og tyttebær.
-    
-    h5 Kyllinglår - kr 99,-
-    h6 Leveres med ris, baguetter og grøntsalat.
-        br
-        br
+
+    ul Baguetter til kun 39,90,- kr !
+        li Ost/skinke
+        li Reker/majones
+        li Roastbiff/potetsalat
+        li Karbonader/potetsalat
         
-    h5 Carbonara - kr 99,-
-    h6 Leveres med salat og baguetter.
-        br
-        br
-        
-    h5 Karbonader - kr 99,-
-    h6 Leveres med potetsalat, grøntsalat og baguetter.
-        br
-        br
-        
-    //sett inn linje
-    
-        br
-    
-    //
-    h3 Baguetter
-        br
-    h5 Ost/skinke - kr 39,90,-
-    h5 Reker/majones - kr 39.90,-
-    h5 Roastbiff/potetsalat - kr 39,90,-
-    h5 Karbonader/potetsalat - kr 39,90,-
     

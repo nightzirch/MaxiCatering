@@ -4,20 +4,34 @@ block content
   h1= title
     
     p Vi har ett bredt utvalg av selskapsmat som passer til de fleste anledninger, enten de være seg bryllup, konfirmasjon eller andre festlige arrangementer.
-
     h3 Foretter 
-    h5 Grillet kamskjell - kr 89
-    h6 Med pinjekjerner, parmaskinke, paprika og salat
-        br
-        br
-        
-    h5 Kremet fiskesuppe - kr 79
-        br
-        br
-        
-    h5 Rekecocktail - kr 79
-        br
-        br
+    .row.demo-tiles
+        .col-xs-3
+          .tile
+            img.tile-image.bigillustration(src='images/example-image.jpg', alt="Grillet kamskjell")
+            h3.tile-title(Web Oriented)
+            p Grillet kamskjell
+            p Innkluderer: Pinjekjerner, parmaskinke, paprika og salat
+            a.btn.btn-primary.btn-large.btn-block(href="#") Kun kr 89,-!
+          
+    
+        .col-xs-3
+          .tile.tile-hot
+            img.tile-image.bigillustration(src="images/kringle.jpg", alt="Kremet fiskesuppe")
+            .h3.tile-title(Web Oriented)
+            p Kremet fiskesuppe
+            a.btn.btn-primary.btn-large.btn-block(href="#") Kun kr 79,-!
+    
+    
+        .col-xs-3
+          .tile
+            img.tile-image.bigillustration(src="images/napoleon.jpg", alt="Rekecocktail")
+            .h3.tile-title(Web Oriented)
+            p Rekecocktail
+            p Vår Stroganoff-/Kylling-/Sweet`n sour gryte levers med ris, baguetter og grøntsalat.
+            a.btn.btn-primary.btn-large.btn-block(href="#") Kun kr 79,-!
+
+
     h5 Mozzarella og aspargessalat med parmaskinke - kr 79
         br
         br
