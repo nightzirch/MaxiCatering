@@ -9,9 +9,11 @@ var routes = require('./routes/index');
 var hovedretter = require('./routes/hovedretter');
 var smaretter = require('./routes/smaretter');
 var desserter = require('./routes/desserter');
-var footermenu = require('./routes/footermenu');
-var omoss = require('./routes/omoss');
+var omoss = require('./routes/om-oss');
+var omcatering = require('./routes/om-catering');
 var gorine = require('./routes/gorine');
+var referanser = require('./routes/referanser');
+
 
 
 var app = express();
@@ -31,9 +33,10 @@ app.use('/', routes);
 app.use('/hovedretter', hovedretter);
 app.use('/smaretter', smaretter);
 app.use('/desserter', desserter);
-app.use('/footermenu', footermenu);
-app.use('/omoss', omoss);
+app.use('/om-oss', omoss);
+app.use('/om-catering', omcatering);
 app.use('/gorine', gorine);
+app.use('/referanser', referanser);
 
 
 

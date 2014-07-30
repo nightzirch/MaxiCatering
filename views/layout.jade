@@ -22,8 +22,8 @@ html
                                 span.icon-bar
                             a.navbar-brand(href="/") Maxi Catering
                         .navbar-collapse.collapse
-                            ul#main-menu.nav.navbar-nav 
-                               li.dropdown
+                            ul#main-menu.nav.navbar-nav
+                                li.dropdown
                                     a.dropdown-toggle(data-toggle="dropdown", href="/hovedretter") Hovedretter
                                         span.caret
                                     span.dropdown-arrow.dropdown-arrow-inverse
@@ -31,13 +31,15 @@ html
                                         li
                                             a(href="/hovedretter/koldtbord") Koldtbord
                                         li
-                                            a(href="/hovedretter/havets-festbord") Havets festbord
+                                            a(href="/hovedretter/koldtbord") Havets Festbord
                                         li
                                             a(href="/hovedretter/julemeny") Julemeny
                                         li
                                             a(href="/hovedretter/selskapsmat") Selskapsmat
                                         li
                                             a(href="/hovedretter/lunch-og-middag") Lunch og middag
+
+
                                           
                                           
                                 li.dropdown
@@ -51,6 +53,8 @@ html
                                             a(href="/smaretter/smorbrod") Smørbrød
                                         li
                                             a(href="/smaretter/rundstykker") Rundstykker
+                                        li
+                                            a(href="/smaretter/tagtest") Tagtest
                                         
 
                                 li.dropdown
@@ -64,13 +68,18 @@ html
                                             a(href="/desserter/vare-spesialiteter") Våre spesialiteter
                                 
                                 li
-                                    a(href="/omoss") Om oss
-                                li
                                     a(href="/gorine") Gorine
                                 li
                                     a(href="/referanser") Referanser
-                                    
-                                       
+                                li
+                                    a(href="/om-oss") Om oss
+                                li
+                                    a(href="/om-catering") Om Catering
+                                li
+                                    a(href="/kontakt") Kontakt 
+                                
+
+
         //footer
             .navbar-wrapper
                 .container
@@ -95,6 +104,9 @@ html
                                     a(href='/footermenu/kontakt') Kontakt  
                                     | · 
                                     a(href='#') Til toppen
+                                    
+                                       
+
                      
         block content
         //Load scripts at the end for faster loading

@@ -1,3 +1,25 @@
 body {
     padding: 50px;
 }
+
+
+/** CSS for navigation through tags **/
+/** Style :target with margin & transition. The 's' can be changed to whatever works (I used it here to represent 'sections') **/
+#top:target, [id*="s"]:target { color:#5b9ede; -webkit-transition:.001s; transition:.001s; margin-top: 10px; }
+
+
+/* Navigation arrows next to header (optional) */
+h2 { position:relative; }
+h2 a { font-size:16px; margin:0 5px; padding:3px; }
+h2 a:hover { color:#fff; background:#3085d6; }
+h2 a.up { display:inline-block; vertical-align:middle; 
+    
+-ms-transform:rotate(90deg); /* IE 9 */
+-webkit-transform:rotate(90deg); /* Safari and Chrome */ transform:rotate(90deg); }
+h2 a.down { display:inline-block; vertical-align:bottom; margin-left:10px;
+-ms-transform:rotate(-90deg); /* IE 9 */
+-webkit-transform:rotate(-90deg); /* Safari and Chrome */ transform:rotate(-90deg); }
+
+/* Hover Selectors to list (optional) */
+.list li { position:relative; }
+.list li:hover:before { content:'›'; color:#5b9ede; position:absolute; left:-40px; }

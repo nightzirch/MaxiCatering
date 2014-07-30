@@ -24,5 +24,11 @@ router.get('/rundstykker', function(req, res) {
   res.render('rundstykker', { title: 'Rundstykker' });
 });
 
+/* GET tagtest */
+router.get('/tagtest', function(req, res) {
+  res.render('tagtest', { title: 'Tagtest' });
+});
+
+
 
 module.exports = router;
