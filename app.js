@@ -13,6 +13,7 @@ var omoss = require('./routes/om-oss');
 var omcatering = require('./routes/om-catering');
 var gorine = require('./routes/gorine');
 var referanser = require('./routes/referanser');
+var kontakt = require('./routes/kontakt');
 
 
 
@@ -36,6 +37,7 @@ app.use('/desserter', desserter);
 app.use('/om-oss', omoss);
 app.use('/om-catering', omcatering);
 app.use('/gorine', gorine);
+app.use('/kontakt', kontakt);
 app.use('/referanser', referanser);
 
 

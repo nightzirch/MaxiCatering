@@ -7,13 +7,13 @@ router.get('/', function(req, res) {
 });
 
 
-/* GET home page. */
+/* GET kaker page. */
 router.get('/kaker', function(req, res) {
   res.render('kaker', { title: 'Kaker' });
 });
 
 
-/* GET rundstykker */
+/* GET våre spesialiteter page */
 router.get('/vare-spesialiteter', function(req, res) {
   res.render('vare-spesialiteter', { title: 'Våre spesialiteter' });
 });

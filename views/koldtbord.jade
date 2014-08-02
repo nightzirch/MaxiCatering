@@ -1,10 +1,8 @@
 extends layout
 
 block content
-    
     h1 Hovedretter
   
-    h1#top
     ol.list
         li
             a(href='#koldtbord') Koldtbord
@@ -19,12 +17,13 @@ block content
         li
             a(href='#baguetter') Baguetter
     
-    h3#koldtbord Koldtbord
+    
     p Koldtbord er svært populært og velges ofte til konfirmasjoner og andre store selskap. Kanskje ikke så rart – det er sosialt, kontaktskapende og alle kan forsyne seg med det de liker best.
 
     p Vi kan skreddersy et koldbord etter din smak, eller du kan velge vår standardmeny. Maten blir levert på delikate fat og er pent anrettet. Vil du ha ekstra varmretter, skalldyr, ost, desserter eller noe annet spesielt, blir vi enige om prisen når du kontakter oss.
     
     .row.demo-tiles
+        h3#koldtbord Koldtbord
         .col-xs-3
             img(src='http://placehold.it/200x200', alt="Koldtbord")
             h3.tile-title(Web Oriented)
@@ -115,6 +114,9 @@ block content
             .h3.tile-title(Web Oriented)
             p Fyll inn mattittel
             p Kun kr 0,-!
+    
+    
+    
     
     
     .row  

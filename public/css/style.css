@@ -1,7 +1,29 @@
 body {
-    padding: 50px;
+    padding: 5px 10px 10px 40px;
+    margin: 50px 0 60px;
 }
 
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #34495e;
+}
+
+footer a {
+    color: #FFFFFF;
+    font-weight:700;
+    padding-left: 10px;
+}
 
 /** CSS for navigation through tags **/
 /** Style :target with margin & transition. The 's' can be changed to whatever works (I used it here to represent 'sections') **/
