@@ -23,48 +23,48 @@ html
                             a.navbar-brand(href="/") Maxi Catering
                         .navbar-collapse.collapse
                             ul#main-menu.nav.navbar-nav
-                                li.dropdown
+                                li.dropdown                                    
                                     a.dropdown-toggle(data-toggle="dropdown", href="/hovedretter") Hovedretter
                                         span.caret
                                     span.dropdown-arrow.dropdown-arrow-inverse
                                     ul.dropdown-menu(role="meny")
                                         li
-                                            a(href="/hovedretter/koldtbord#") Koldtbord
+                                            a(href="/hovedretter#koldtbord") Koldtbord
                                         li
-                                            a(href="/hovedretter/koldtbord") Havets Festbord
+                                            a(href="/hovedretter#foretter") Foretter
                                         li
-                                            a(href="/hovedretter/julemeny") Julemeny
+                                            a(href="/hovedretter#kjott") Kjøtt
                                         li
-                                            a(href="/hovedretter/selskapsmat") Selskapsmat
+                                            a(href="/hovedretter#fisk") Fisk                                       
                                         li
-                                            a(href="/hovedretter/lunch-og-middag") Lunch og middag
-
-
-                                          
-                                          
+                                            a(href="/hovedretter#fav") Våre Favoritter
+                                        li
+                                            a(href="/hovedretter#baguetter") Baguetter
+                                            
+                                    
                                 li.dropdown
                                     a.dropdown-toggle(data-toggle="dropdown", href="/smaretter") Småretter
                                         span.caret
                                     span.dropdown-arrow.dropdown-arrow-inverse
                                     ul.dropdown-menu(role="meny")
                                         li
-                                            a(href="/smaretter/tapas") Tapas
+                                            a(href="/smaretter#tapas") Tapas
                                         li
-                                            a(href="/smaretter/smorbrod") Smørbrød
+                                            a(href="/smaretter#smorbrod") Smørbrød
                                         li
-                                            a(href="/smaretter/rundstykker") Rundstykker
+                                            a(href="/smaretter#rundstykker") Rundstykker
+                                            
                                         
-
                                 li.dropdown
                                     a.dropdown-toggle(data-toggle="dropdown", href="/desserter") Desserter
                                         span.caret
                                     span.dropdown-arrow.dropdown-arrow-inverse
                                     ul.dropdown-menu(role="meny")
                                         li
-                                            a(href="/desserter/kaker") Kaker
+                                            a(href="/desserter#kaker") Kaker
                                         li
-                                            a(href="/desserter/vare-spesialiteter") Våre spesialiteter
-                                
+                                            a(href="/desserter#spesialiteter") Våre Spesialiteter
+                                    
                                 li
                                     a(href="/gorine") Gorine
                                 li
@@ -75,20 +75,19 @@ html
                                     a(href="/om-catering") Om Catering
                                 li
                                     a(href="/kontakt") Kontakt 
-                                
-
-
-        footer
-            p(align='center')
-            a(href='footermenu/om-oss') © 2014 Maxi Catering · 
-            a(href='/footermenu/kontakt') Kontakt  
-            | · 
-            a(href='#') Til toppen
-                                
-                                       
-
+                       
                      
-        block content
+        .container
+            block content
+        
+        footer.inverse
+            .container
+                p(align='center')
+                a(href='/om-oss') © 2014 Maxi Catering · 
+                a(href='/kontakt') Kontakt  
+                | · 
+                a(href='#') Til toppen
+                
         //Load scripts at the end for faster loading
         script(src="/js/jquery-2.0.3.min.js")
         script(src="/js/bootstrap.js")

@@ -1,23 +1,27 @@
 extends layout
 
 block content
-    
-    h1 Kontakt  
-    
-    h3 Besøksadresse
-    p Maxi Catering AS
-    p Stålveien 9, Tinnheia
-    p 4629 Kristiansand
-
-    h3 Telefon: 
-    p 40 00 19 54
-        br
-        br
+    .container-fluid
         
-    h3 Fax:
-    p 38 18 46 09
-        br
-        br
+      
+        .row
+            h1= title 
+            p Kom å besøk oss, eller kontakt oss via telefon, faks eller e-post. 
+            
+        .row
+            h5 Besøksadresse
+            p Maxi Catering AS
+            p Stålveien 9, Tinnheia
+            p 4629 Kristiansand
         
-    h3 E-post:
-    p post@maxicatering.no
+        .row
+            h5 Telefon
+            p 40 00 19 54
+        
+        .row
+            h5 Faks
+            p 38 18 46 09
+            
+        .row
+            h5 Epost
+            p post@maxicatering.no

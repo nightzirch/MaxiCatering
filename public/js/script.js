@@ -66,6 +66,6 @@ $(document).ready(function(){
         rowDivs[currentDiv].height(currentTallest);
         }
     
-    });​
+    });
     
 });
