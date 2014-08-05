@@ -14,9 +14,6 @@ html {
   min-height: 100%;
 }
 
-
-
-
 footer {
   position: absolute;
   bottom: 0;
@@ -24,12 +21,9 @@ footer {
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #34495e;
+  
 }
-
 
 li {
  list-style-type: none;
 }
-
-
-
